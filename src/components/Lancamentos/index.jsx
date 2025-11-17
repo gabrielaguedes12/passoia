@@ -10,7 +10,7 @@ function Lancamentos() {
   const [cor, setCor] = useState(vermelho);
 
   return (
-    <div className="App">
+    <>
       <h1>Cor Favorita</h1>
 
       {/* A imagem exibida será sempre a do estado "cor" */}
@@ -19,7 +19,7 @@ function Lancamentos() {
       {/* Cada botão altera o estado "cor", trocando a imagem exibida */}
       <button onClick={() => setCor(vermelho)}>Vermelho</button>
       <button onClick={() => setCor(azul)}>Azul</button>
-    </div>
+    </>
   );
 }
 
