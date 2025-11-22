@@ -1,11 +1,13 @@
 import Header from "./components/Header";
-import Lancamentos from "./components/Header";
+import Banner from "./components/Banner";
+import Carrossel from "./components/Carrossel";
 
 function App() {
   return (
     <>
       <Header />
-      <Lancamentos />
+      <Banner />
+      <Carrossel />
     </>
   );
 }
