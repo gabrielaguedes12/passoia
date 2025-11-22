@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Lancamentos from "./components/Lancamentos";
+import Lancamentos from "./components/Header";
 
 function App() {
   return (
