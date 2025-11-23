@@ -5,7 +5,7 @@ export default function Header() {
 
   return (
     <header>
-      <img src={logo} alt="logo" />
+      <img className="logoImg" src={logo} alt="logo" />
 
       <ul>
         <li>LOOKS</li>

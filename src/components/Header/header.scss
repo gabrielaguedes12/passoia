@@ -1,14 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  padding: 15px 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
 
- ul {
+  ul {
     display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
   }
 
   li {
-    list-style: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
+}
+
+.logoImg {
+  height: 80px;
+  display: block; // evita pequeno empurrão no layout
+  max-width: 100%; // evita estourar a tela
 }

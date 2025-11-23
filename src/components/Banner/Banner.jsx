@@ -5,7 +5,7 @@ import "./banner.scss";
 export default function Banner() {
   return (
     <header>
-      <img src={banner} alt="banner" />      
+      <img className="bannerImg" src={banner} alt="banner" />      
     </header>
   );
 }
