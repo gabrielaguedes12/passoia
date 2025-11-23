@@ -1,7 +1,8 @@
 import "./header.scss";
 import logo from "../../assets/header/logo.png";
 
-function Header() {
+export default function Header() {
+
   return (
     <header>
       <img src={logo} alt="logo" />
@@ -14,4 +15,3 @@ function Header() {
     </header>
   );
 }
-export default Header;

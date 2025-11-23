@@ -1,17 +1,18 @@
 import "./carrossel.scss";
-import logo from "../../assets/header/logo.png";
+import blush from "../../assets/carrossel/blush.png";
+import gloss from "../../assets/carrossel/gloss.png";
+import paleta from "../../assets/carrossel/paleta.png";
+import sombra from "../../assets/carrossel/sombra.jpg";
 
-function Banner() {
+export default function Carrossel() {
   return (
-    <header>
-      <img src={logo} alt="logo" />
-
-      <ul>
-        <li>LOOKS</li>
-        <li>LANÇAMENTOS</li>
-        <li>NOVIDADES</li>
-      </ul>
-    </header>
+    <>
+      <img src={blush} alt="blush" />
+      <img src={gloss} alt="gloss" />
+      <img src={paleta} alt="paleta" />
+      <img src={sombra} alt="sombra" />
+    </>
   );
 }
-export default Banner;
+
+ 

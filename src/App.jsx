@@ -1,15 +1,20 @@
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import Carrossel from "./components/Carrossel";
+import Header from "./components/Header.jsx";
+import Banner from "./components/Banner.jsx";
+import Carrossel from "./components/Carrossel.jsx";
+import Lancamentos from "./components/Lancamentos.jsx";
+import Novidades from "./components/Novidades.jsx";
+import Footer from "./components/Footer.jsx";
 
-function App() {
+export default function App() {
   return (
     <>
       <Header />
       <Banner />
       <Carrossel />
+      <Lancamentos />
+      <Novidades />
+      <Footer />
+
     </>
   );
 }
-
-export default App;

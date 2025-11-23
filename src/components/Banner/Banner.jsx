@@ -2,17 +2,10 @@ import banner from "../../assets/banner.jpj";
 import "./banner.scss";
 
 
-function Banner() {
+export default function Banner() {
   return (
     <header>
-      <img src={banner} alt="banner" />
-
-      <ul>
-        <li>LOOKS</li>
-        <li>LANÇAMENTOS</li>
-        <li>NOVIDADES</li>
-      </ul>
+      <img src={banner} alt="banner" />      
     </header>
   );
 }
-export default Banner;
