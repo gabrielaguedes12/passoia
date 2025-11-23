@@ -2,7 +2,7 @@ import "../Header/header.scss";
 import logo from "../../assets/header/logo.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { byPrefixAndName } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
 
@@ -15,10 +15,7 @@ export default function Header() {
         <li>LANÇAMENTOS</li>
         <li>NOVIDADES</li>
         <li className="icon-cart">
-          <FontAwesomeIcon 
-            icon={byPrefixAndName.fas["cart-shopping"]}
-            className="cartIcon"
-          />
+            <FontAwesomeIcon icon={faCartShopping} className="cartIcon" />
         </li>
       </ul>
     </header>
