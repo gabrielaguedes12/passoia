@@ -1,4 +1,4 @@
-import banner from "../../assets/banner.jpj";
+import banner from "../../assets/banner/banner.jpg";
 import "./banner.scss";
 
 
