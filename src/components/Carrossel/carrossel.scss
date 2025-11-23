@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tituloCarrossel{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sessaoCarrossel{
+    display: flex;
+    justify-content: center;
+    align-items:space-around;
+    width: 320;
+    height: 500px;
+}

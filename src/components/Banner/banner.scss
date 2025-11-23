@@ -1,12 +1,18 @@
 * {
   margin: 0;
-  padding: 0;
+ 
   box-sizing: border-box;
 }
 
-.bannerImg{
+.banner {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
   width: 100%;
   height: auto;
-  object-fit: cover;
   display: block;
 }
