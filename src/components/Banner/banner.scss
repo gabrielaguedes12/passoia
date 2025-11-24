@@ -1,18 +1,40 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  padding-top: 20px;
 }
 
-.banner {
+.banner-container {
   width: 100%;
-  overflow: hidden;
+  margin-top: 100px; // espaço do header
   display: flex;
   justify-content: center;
 }
 
-.banner img {
+.banner-container img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain; // garante a imagem inteira SEM cortar
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+  .banner-container {
+    margin-top: 80px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .banner-container {
+    margin-top: 90px;
+  }
+}
+
+/* NOTEBOOK / MONITOR */
+@media (min-width: 769px) {
+  .banner-container {
+    margin-top: 100px;
+  }
 }
