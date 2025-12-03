@@ -1,24 +1,132 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
+/* ESTILOS GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.tituloFooter{
-  font-size: 24px;
-  }
-
-.footer-container{
-padding: 40px 60px;
-display: flex;
-justify-content: space-between;
- align-items: flex-start;
+.footer-container {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+  flex-wrap: wrap; /* IMPORTANTE */
+  gap: 40px;
 }
 
-.cardFooter{
+.cardFooter {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   width: 33%;
+  min-width: 250px; /* EVITA AMASSAR NO RESPONSIVO */
 }
 
+.tituloFooter {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Textos */
+.cardFooter p {
+  font-size: 16px;
+  color: #444;
+  cursor: pointer;
+}
+.cardFooter p:hover {
+  text-decoration: underline;
+}
+
+/* Pagamento */
+.cardFooter.pagamento {
+  width: auto;
+  min-width: 220px;
+}
+
+.pagamentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 250px;
+}
+
+.pagamentos-container img {
+  height: 35px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Redes Sociais */
+.redes-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.redes-container img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.redes-container img:hover {
+  transform: scale(1.1);
+}
+
+/* ---------------------------------------- */
+/*           RESPONSIVIDADE                */
+/* ---------------------------------------- */
+
+/* TABLET */
+@media (max-width: 900px) {
+  .footer-container {
+    padding: 35px 40px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cardFooter {
+    width: 45%;
+    align-items: center;
+  }
+
+  .pagamentos-container {
+    justify-content: center;
+  }
+
+  .redes-container {
+    justify-content: center;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .cardFooter {
+    width: 100%;
+    align-items: center;
+  }
+
+  .tituloFooter {
+    font-size: 17px;
+  }
+
+  .cardFooter p {
+    font-size: 15px;
+  }
+
+  .pagamentos-container img {
+    height: 30px;
+  }
+
+  .redes-container img {
+    width: 35px;
+    height: 35px;
+  }
+}

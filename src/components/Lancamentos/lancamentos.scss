@@ -1,0 +1,197 @@
+.lancamentos {
+  width: 100%;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  /* MINIATURAS */
+  .miniaturas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    img {
+      width: 70px;
+      height: auto;
+      border: 2px solid;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &.active {
+        border-color: #000;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  /* IMAGEM PRINCIPAL */
+  .imagem-principal img {
+    width: 320px; 
+    height: auto;
+    border: 2px solid;
+  }
+
+  /* INFO */
+  .info {
+    max-width: 380px;
+
+    /* ESTRELAS RESPONSIVAS */
+    .estrelas {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        width: 100%;
+        max-width: 150px;  /* desktop */
+        height: auto;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .estoque {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .cores {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+
+      .cor {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: 0.3s;
+
+        &.selecionada {
+          border-color: black;
+        }
+      }
+    }
+
+    .tituloDescricao {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .descricao {
+      color: #555;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+  }
+
+  /* ---------------------- */
+  /* RESPONSIVIDADE TABLET */
+  /* ---------------------- */
+  @media (max-width: 900px) {
+    .container {
+      gap: 25px;
+    }
+
+    .imagem-principal img {
+      width: 260px;
+    }
+
+    .miniaturas img {
+      width: 55px;
+    }
+
+    .info {
+      max-width: 330px;
+    }
+
+    .estrelas img {
+      max-width: 120px; 
+    }
+  }
+
+  /* -------------------- */
+  /* RESPONSIVIDADE CELULAR */
+  /* -------------------- */
+  @media (max-width: 600px) {
+    padding: 20px;
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .miniaturas {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+
+      img {
+        width: 50px;
+      }
+    }
+
+    .imagem-principal img {
+      width: 220px;
+      margin: 10px 0;
+    }
+
+    .info {
+      max-width: 100%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .estrelas {
+      justify-content: center;
+
+      img {
+        max-width: 100px; /* celular */
+      }
+    }
+
+    .cores {
+      justify-content: center;
+
+      .cor {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    .descricao {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+}

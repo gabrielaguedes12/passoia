@@ -23,16 +23,17 @@ export default function Footer(){
         <p>Nossas Lojas</p>
         </div>
 
-      <div className="cardFooter">
-        <h2 className="tituloFooter">FORMAS DE PAGAMENTO</h2>
+    <div className="cardFooter pagamento">
+  <h2 className="tituloFooter">FORMAS DE PAGAMENTO</h2>
 
-        <div className="pagamentos-container">
-           <img  src={boleto} alt="boleto" />      
-           <img  src={mastercard} alt="mastercard" />      
-           <img src={pix} alt="pix" />      
-           <img  src={visa} alt="visa" />  
-        </div>
-      </div>
+  <div className="pagamentos-container">
+    <img src={mastercard} alt="mastercard" />
+    <img src={visa} alt="visa" />
+    <img src={pix} alt="pix" />
+    <img src={boleto} alt="boleto" />
+  </div>
+</div>
+
         
       <div className="cardFooter">
         <h2 className="tituloFooter">SIGA-NOS NAS REDES SOCIAIS</h2>

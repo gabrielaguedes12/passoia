@@ -5,43 +5,43 @@
   font-family: "Roboto", sans-serif;
 }
 
-.tituloCarrossel{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 24px;
-    padding-top: 40px;
+
+.tituloCarrossel {
+  text-align: center;
+  font-size: 40px;
+  padding: 40px 20px 20px 20px;
 }
 
-.sessaoCarrossel{
-    display: flex;    
-    flex-direction: row;
-    align-content: space-between;
-    justify-content: center;
-    gap: 30px;
-    padding: 30px 50px;
+
+.sessaoCarrossel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px;
+  padding: 30px 50px;
 }
 
-.card img{
-  width: 120%;
-  height: 80%;
-  object-fit: cover;
-  cursor: pointer;
 
-}
-
-.card{
-    position: relative;
-    width: 100%;
-  height: 100%;
+.card {
+  position: relative;
+  width: 100%;
+  height: 320px;
   overflow: hidden;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
 }
 
-.card:hover{
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);;
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 
 .card span {
   position: absolute;
@@ -50,6 +50,40 @@
   color: white;
   font-weight: bold;
   font-size: 22px;
-  font-family: "Roboto", sans-serif;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+
+@media (max-width: 900px) {
+  .sessaoCarrossel {
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 20px 30px;
+    gap: 20px;
+  }
+
+  .card {
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tituloCarrossel {
+    font-size: 28px;
+  }
+
+  .sessaoCarrossel {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .card {
+    height: 220px;
+  }
+
+  .card span {
+    font-size: 18px;
+    bottom: 10px;
+    left: 12px;
+  }
 }
