@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Lancamentos.scss";
+import "./lancamentos.scss";
 
 // Import das imagens
 import rosa from "../../assets/lancamentos/rosa.png";
